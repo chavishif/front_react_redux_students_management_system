@@ -16,13 +16,7 @@ export const getScoresAsync = createAsyncThunk(
     return response;
   }
 );
-// export const delStudentsAsync = createAsyncThunk(
-//     'samp/delStudent',
-//     async (id) => {
-//       const response = await delStudent(id);
-//       return response;
-//     }
-//   );
+
 
 export const addStudentsAsync = createAsyncThunk(
   'samp/addStudents',
@@ -39,14 +33,7 @@ export const addScoresAsync = createAsyncThunk(
     return response;
   }
 );
-// export const UpdStudentsAsync = createAsyncThunk(
-//   'samp/updStudent',
-//   async (student) => {
-//     const response = await updStudent(student.description,student.sName,student.id);
-//     console.log(response)
-//     return response;
-//   }
-// );
+
 
 export const sampSlice = createSlice({
   name: 'samp',
