@@ -4,21 +4,11 @@ import { selectStudents, selectUpdate, selectScores, getScoresAsync } from './sa
 
 export function Samp() {
     const scores = useSelector(selectScores);
-    // const studentsupdate = useSelector(selectUpdate);
     const dispatch = useDispatch();
     const [showScores, setShowScores] = useState(false);
     const [student_name, setstudent_name] = useState("")
     const [filterByName, setFilterByName] = useState(false);
 
-
-    // const handleClick = () => {
-    //     dispatch(getScoresAsync());
-    //     setShowScores(true);
-    // }
-
-    // useEffect(() => {
-    //     dispatch(getScoresAsync())
-    // }, [scores.length])
 
 
     const handleGetAllScores = () => {
